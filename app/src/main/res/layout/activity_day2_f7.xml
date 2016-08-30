@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_day2_f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.akupeduli.workshophari2.Day2F7Activity">
+
+    <TextView
+        android:text="Pilih jenis wisata yang ingin dikunjungi:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkWisata">
+
+        <RadioButton
+            android:text="Wisata Mata Air"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioMataAir"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layoutMataAir"
+            android:visibility="gone"
+            android:layout_marginLeft="16dp">
+
+            <CheckBox
+                android:text="Sumber Maron"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkSMaron" />
+
+            <CheckBox
+                android:text="Sumber Sirah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkSSirah" />
+
+            <CheckBox
+                android:text="Sumber Pitu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkSPitu" />
+        </LinearLayout>
+
+        <RadioButton
+            android:text="Wisata Pantai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioPantai"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layoutPantai"
+            android:visibility="gone"
+            android:layout_marginLeft="16dp">
+
+            <CheckBox
+                android:text="Goa Cina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkPGoaCina" />
+
+            <CheckBox
+                android:text="Sendang Biru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkPSendangBiru" />
+
+            <CheckBox
+                android:text="Pantai Sempu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkPSempu" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <Button
+        android:text="Simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textHasil" />
+
+</LinearLayout>
