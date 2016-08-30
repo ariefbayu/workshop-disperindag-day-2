@@ -2,6 +2,7 @@ package org.akupeduli.workshophari2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -52,7 +53,7 @@ public class Day2F7Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(groupWisata.getCheckedRadioButtonId() == buttonPantai.getId()){
-                    String nilai = "Anda memilih wisata pantai dengan tujuan: ";
+                    String nilai = "Anda memilih <b>wisata pantai</b> dengan tujuan: <i>";
                     CheckBox cp1 = (CheckBox)findViewById(R.id.checkPGoaCina);
                     CheckBox cp2 = (CheckBox)findViewById(R.id.checkPSempu);
                     CheckBox cp3 = (CheckBox)findViewById(R.id.checkPSendangBiru);
@@ -66,10 +67,10 @@ public class Day2F7Activity extends AppCompatActivity {
                     if(cp3.isChecked()){
                         nilai += "Sendang Biru, ";
                     }
-                    textHasil.setText(nilai);
+                    textHasil.setText(Html.fromHtml(nilai + "</i>"));
                 }
                 if(groupWisata.getCheckedRadioButtonId() == buttonMataAir.getId()){
-                    String nilai = "Anda memilih wisata mata air dengan tujuan: ";
+                    String nilai = "Anda memilih <b>wisata mata air</b> dengan tujuan: <i>";
                     CheckBox cp1 = (CheckBox)findViewById(R.id.checkSMaron);
                     CheckBox cp2 = (CheckBox)findViewById(R.id.checkSSirah);
                     CheckBox cp3 = (CheckBox)findViewById(R.id.checkSPitu);
@@ -83,7 +84,7 @@ public class Day2F7Activity extends AppCompatActivity {
                     if(cp3.isChecked()){
                         nilai += "Sumber Pitu, ";
                     }
-                    textHasil.setText(nilai);
+                    textHasil.setText(Html.fromHtml(nilai + "</i>"));
                 }
             }
         });
