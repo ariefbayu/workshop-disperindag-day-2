@@ -10,17 +10,20 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".RadioActivity" />
-        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".SpinnerActivity"></activity>
         <activity android:name=".Day2F1Activity" />
         <activity android:name=".Day2F2Activity" />
         <activity android:name=".Day2F3Activity" />
         <activity android:name=".Day2F4Activity" />
-        <activity android:name=".Day2F5Activity"></activity>
-        <activity android:name=".Day2F6Activity">
+        <activity android:name=".Day2F5Activity" />
+        <activity android:name=".Day2F6Activity" />
+        <activity android:name=".Day2F7Activity" />
+        <activity android:name=".Day2F8Activity">
         </activity>
-        <activity android:name=".Day2F7Activity">
+        <activity android:name=".Day2F9Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

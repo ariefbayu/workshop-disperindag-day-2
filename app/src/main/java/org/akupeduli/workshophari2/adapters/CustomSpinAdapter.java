@@ -15,22 +15,22 @@ import org.akupeduli.workshophari2.R;
  */
 
 public class CustomSpinAdapter extends BaseAdapter {
-    TypedArray arrIsiSpinner;
+    TypedArray penampungArray;
     Context context;
     LayoutInflater inflater;
     public CustomSpinAdapter(Context context, TypedArray aiSpinner){
         this.context = context;
         this.inflater = LayoutInflater.from(context);
-        this.arrIsiSpinner = aiSpinner;
+        this.penampungArray = aiSpinner;
     }
     @Override
     public int getCount() {
-        return arrIsiSpinner.length();
+        return penampungArray.length();
     }
 
     @Override
     public String getItem(int i) {
-        return arrIsiSpinner.getString(i);
+        return penampungArray.getString(i);
     }
 
     @Override

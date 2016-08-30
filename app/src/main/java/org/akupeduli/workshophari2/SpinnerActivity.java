@@ -40,11 +40,11 @@ public class SpinnerActivity extends AppCompatActivity {
 
 
 
-        spinnerXML = (Spinner) findViewById(R.id.spinnerXML);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-                this, R.array.isi_spinner_xml, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerXML.setAdapter(adapter);
+//        spinnerXML = (Spinner) findViewById(R.id.spinnerXML);
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+//                this, R.array.contoh_isi_spinner, android.R.layout.simple_spinner_item);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        spinnerXML.setAdapter(adapter);
 
         TypedArray typedIsi = getResources().obtainTypedArray(R.array.isi_spinner_xml);
         CustomSpinAdapter spinAdapter = new CustomSpinAdapter(getApplicationContext(), typedIsi);
