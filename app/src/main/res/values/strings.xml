@@ -7,4 +7,9 @@
         <item>Rabu</item>
         <item>Kamis</item>
     </string-array>
+    <string-array name="definisi_gambar">
+        <item>Kotak</item>
+        <item>Lingkaran</item>
+        <item>Bintang</item>
+    </string-array>
 </resources>
