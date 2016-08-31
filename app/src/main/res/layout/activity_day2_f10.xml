@@ -16,4 +16,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/spinner3"
         android:spinnerMode="dialog" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6" />
 </LinearLayout>
